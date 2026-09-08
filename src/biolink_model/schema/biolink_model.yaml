@@ -14052,11 +14052,37 @@ enums:
       The outcome of treating a disease or phenotypic feature with a chemical entity.
     permissible_values:
       fully_recovered:
+        description: Complete recovery following treatment; free of symptoms with no lasting health problems.
+        exact_mappings:
+          - NCIT:C82467  # Complete Recovery
+        narrow_mappings:
+          - NCIT:C4870  # Complete Remission (disease-response-specific)
       improved:
+        description: Partial improvement following treatment.
+        exact_mappings:
+          - NCIT:C125459  # Improved
+        narrow_mappings:
+          - NCIT:C18058  # Partial Remission (disease-response-specific)
       unchanged:
+        description: No change in the condition following treatment.
+        exact_mappings:
+          - NCIT:C71687  # Unchanged
+        narrow_mappings:
+          - NCIT:C18213  # Stable Disease (disease-response-specific)
       deteriorated:
+        description: Worsening of the condition following treatment.
+        exact_mappings:
+          - NCIT:C25751  # Deterioration
+        narrow_mappings:
+          - NCIT:C35571  # Progressive Disease (disease-response-specific)
       died:
+        description: Death following treatment.
+        exact_mappings:
+          - NCIT:C28554  # Dead
       unknown:
+        description: Treatment outcome is unknown.
+        exact_mappings:
+          - NCIT:C17998  # Unknown
 
   ResponseTargetEnum:
     description: >-

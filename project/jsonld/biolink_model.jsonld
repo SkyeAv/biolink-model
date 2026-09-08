@@ -1084,22 +1084,58 @@
       "from_schema": "https://w3id.org/biolink/vocab/",
       "permissible_values": [
         {
-          "text": "fully_recovered"
+          "text": "fully_recovered",
+          "description": "Complete recovery following treatment; free of symptoms with no lasting health problems.",
+          "exact_mappings": [
+            "NCIT:C82467"
+          ],
+          "narrow_mappings": [
+            "NCIT:C4870"
+          ]
         },
         {
-          "text": "improved"
+          "text": "improved",
+          "description": "Partial improvement following treatment.",
+          "exact_mappings": [
+            "NCIT:C125459"
+          ],
+          "narrow_mappings": [
+            "NCIT:C18058"
+          ]
         },
         {
-          "text": "unchanged"
+          "text": "unchanged",
+          "description": "No change in the condition following treatment.",
+          "exact_mappings": [
+            "NCIT:C71687"
+          ],
+          "narrow_mappings": [
+            "NCIT:C18213"
+          ]
         },
         {
-          "text": "deteriorated"
+          "text": "deteriorated",
+          "description": "Worsening of the condition following treatment.",
+          "exact_mappings": [
+            "NCIT:C25751"
+          ],
+          "narrow_mappings": [
+            "NCIT:C35571"
+          ]
         },
         {
-          "text": "died"
+          "text": "died",
+          "description": "Death following treatment.",
+          "exact_mappings": [
+            "NCIT:C28554"
+          ]
         },
         {
-          "text": "unknown"
+          "text": "unknown",
+          "description": "Treatment outcome is unknown.",
+          "exact_mappings": [
+            "NCIT:C17998"
+          ]
         }
       ]
     },
@@ -46986,9 +47022,9 @@
   ],
   "metamodel_version": "1.11.0",
   "source_file": "biolink_model.yaml",
-  "source_file_date": "2026-09-02T16:46:09",
-  "source_file_size": 543053,
-  "generation_date": "2026-09-02T16:46:20",
+  "source_file_date": "2026-09-08T15:14:23",
+  "source_file_size": 544224,
+  "generation_date": "2026-09-08T15:14:32",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/biolink_model.context.jsonld",

@@ -391,11 +391,29 @@ class TreatmentOutcomeEnum(str, Enum):
     The outcome of treating a disease or phenotypic feature with a chemical entity.
     """
     fully_recovered = "fully_recovered"
+    """
+    Complete recovery following treatment; free of symptoms with no lasting health problems.
+    """
     improved = "improved"
+    """
+    Partial improvement following treatment.
+    """
     unchanged = "unchanged"
+    """
+    No change in the condition following treatment.
+    """
     deteriorated = "deteriorated"
+    """
+    Worsening of the condition following treatment.
+    """
     died = "died"
+    """
+    Death following treatment.
+    """
     unknown = "unknown"
+    """
+    Treatment outcome is unknown.
+    """
 
 
 class ResponseTargetEnum(str, Enum):

@@ -1,5 +1,5 @@
 # Auto generated from biolink_model.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-09-02T16:46:52
+# Generation date: 2026-09-08T15:15:00
 # Schema: Biolink-Model
 #
 # id: https://w3id.org/biolink/vocab/
@@ -16081,12 +16081,24 @@ class TreatmentOutcomeEnum(EnumDefinitionImpl):
     """
     The outcome of treating a disease or phenotypic feature with a chemical entity.
     """
-    fully_recovered = PermissibleValue(text="fully_recovered")
-    improved = PermissibleValue(text="improved")
-    unchanged = PermissibleValue(text="unchanged")
-    deteriorated = PermissibleValue(text="deteriorated")
-    died = PermissibleValue(text="died")
-    unknown = PermissibleValue(text="unknown")
+    fully_recovered = PermissibleValue(
+        text="fully_recovered",
+        description="Complete recovery following treatment; free of symptoms with no lasting health problems.")
+    improved = PermissibleValue(
+        text="improved",
+        description="Partial improvement following treatment.")
+    unchanged = PermissibleValue(
+        text="unchanged",
+        description="No change in the condition following treatment.")
+    deteriorated = PermissibleValue(
+        text="deteriorated",
+        description="Worsening of the condition following treatment.")
+    died = PermissibleValue(
+        text="died",
+        description="Death following treatment.")
+    unknown = PermissibleValue(
+        text="unknown",
+        description="Treatment outcome is unknown.")
 
     _defn = EnumDefinition(
         name="TreatmentOutcomeEnum",
