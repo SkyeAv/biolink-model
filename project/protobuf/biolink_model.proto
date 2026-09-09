@@ -2700,7 +2700,7 @@ message ChemicalOrDrugOrTreatmentToDiseaseOrPhenotypicFeatureAssociation
  repeated  string anatomicalContextQualifier = 0
   clinicalApprovalStatusEnum clinicalApprovalStatus = 0
   researchPhaseEnum maxResearchPhase = 0
- repeated  string fDARegulatoryApprovals = 0
+ repeated  string regulatoryApprovals = 0
   integer numberOfCases = 0
  }
 // A role played by the molecular entity or part thereof within a chemical context.
@@ -4234,7 +4234,7 @@ message DruggableGeneToDiseaseAssociation
   geneOrGeneProduct subject = 0
   geneToDiseasePredicateEnum predicate = 0
  }
-// An association between any entity and a disease, capturing clinical context such as approval status, research phase, FDA regulatory approvals, and number of cases.
+// An association between any entity and a disease, capturing clinical context such as approval status, research phase, regulatory approvals, and number of cases.
 message EntityToDiseaseAssociation
  {
   string id = 0
@@ -4306,10 +4306,10 @@ message EntityToDiseaseAssociation
  repeated  string anatomicalContextQualifier = 0
   clinicalApprovalStatusEnum clinicalApprovalStatus = 0
   researchPhaseEnum maxResearchPhase = 0
- repeated  string fDARegulatoryApprovals = 0
+ repeated  string regulatoryApprovals = 0
   integer numberOfCases = 0
  }
-// An association between any entity and a phenotypic feature, capturing clinical context such as approval status, research phase, FDA regulatory approvals, and number of cases.
+// An association between any entity and a phenotypic feature, capturing clinical context such as approval status, research phase, regulatory approvals, and number of cases.
 message EntityToPhenotypicFeatureAssociation
  {
   string id = 0
@@ -4386,7 +4386,7 @@ message EntityToPhenotypicFeatureAssociation
   double hasPercentage = 0
   clinicalApprovalStatusEnum clinicalApprovalStatus = 0
   researchPhaseEnum maxResearchPhase = 0
- repeated  string fDARegulatoryApprovals = 0
+ repeated  string regulatoryApprovals = 0
   integer numberOfCases = 0
  }
 // A environmental exposure is a factor relating to abiotic processes in the environment including sunlight (UV-B), atmospheric (heat, cold, general pollution) and water-born contaminants.

@@ -1,5 +1,5 @@
 # Auto generated from biolink_model.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-09-08T15:15:00
+# Generation date: 2026-09-09T22:44:07
 # Schema: Biolink-Model
 #
 # id: https://w3id.org/biolink/vocab/
@@ -9807,7 +9807,7 @@ class ChemicalOrDrugOrTreatmentToDiseaseOrPhenotypicFeatureAssociation(Associati
     anatomical_context_qualifier: Optional[Union[str, list[str]]] = empty_list()
     clinical_approval_status: Optional[Union[str, "ClinicalApprovalStatusEnum"]] = None
     max_research_phase: Optional[Union[str, "ResearchPhaseEnum"]] = None
-    FDA_regulatory_approvals: Optional[Union[str, list[str]]] = empty_list()
+    regulatory_approvals: Optional[Union[str, list[str]]] = empty_list()
     number_of_cases: Optional[int] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -9872,9 +9872,9 @@ class ChemicalOrDrugOrTreatmentToDiseaseOrPhenotypicFeatureAssociation(Associati
         if self.max_research_phase is not None and not isinstance(self.max_research_phase, ResearchPhaseEnum):
             self.max_research_phase = ResearchPhaseEnum(self.max_research_phase)
 
-        if not isinstance(self.FDA_regulatory_approvals, list):
-            self.FDA_regulatory_approvals = [self.FDA_regulatory_approvals] if self.FDA_regulatory_approvals is not None else []
-        self.FDA_regulatory_approvals = [v if isinstance(v, str) else str(v) for v in self.FDA_regulatory_approvals]
+        if not isinstance(self.regulatory_approvals, list):
+            self.regulatory_approvals = [self.regulatory_approvals] if self.regulatory_approvals is not None else []
+        self.regulatory_approvals = [v if isinstance(v, str) else str(v) for v in self.regulatory_approvals]
 
         if self.number_of_cases is not None and not isinstance(self.number_of_cases, int):
             self.number_of_cases = int(self.number_of_cases)
@@ -11539,7 +11539,7 @@ class ClinicalTrialAndRegulatoryApprovalContextMixin(YAMLRoot):
 
     clinical_approval_status: Optional[Union[str, "ClinicalApprovalStatusEnum"]] = None
     max_research_phase: Optional[Union[str, "ResearchPhaseEnum"]] = None
-    FDA_regulatory_approvals: Optional[Union[str, list[str]]] = empty_list()
+    regulatory_approvals: Optional[Union[str, list[str]]] = empty_list()
     number_of_cases: Optional[int] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -11549,9 +11549,9 @@ class ClinicalTrialAndRegulatoryApprovalContextMixin(YAMLRoot):
         if self.max_research_phase is not None and not isinstance(self.max_research_phase, ResearchPhaseEnum):
             self.max_research_phase = ResearchPhaseEnum(self.max_research_phase)
 
-        if not isinstance(self.FDA_regulatory_approvals, list):
-            self.FDA_regulatory_approvals = [self.FDA_regulatory_approvals] if self.FDA_regulatory_approvals is not None else []
-        self.FDA_regulatory_approvals = [v if isinstance(v, str) else str(v) for v in self.FDA_regulatory_approvals]
+        if not isinstance(self.regulatory_approvals, list):
+            self.regulatory_approvals = [self.regulatory_approvals] if self.regulatory_approvals is not None else []
+        self.regulatory_approvals = [v if isinstance(v, str) else str(v) for v in self.regulatory_approvals]
 
         if self.number_of_cases is not None and not isinstance(self.number_of_cases, int):
             self.number_of_cases = int(self.number_of_cases)
@@ -14995,7 +14995,7 @@ class GeneToGoTermAssociation(FunctionalAssociation):
 class EntityToDiseaseAssociation(Association):
     """
     An association between any entity and a disease, capturing clinical context such as approval status, research
-    phase, FDA regulatory approvals, and number of cases.
+    phase, regulatory approvals, and number of cases.
     """
     _inherited_slots: ClassVar[list[str]] = []
 
@@ -15022,7 +15022,7 @@ class EntityToDiseaseAssociation(Association):
     anatomical_context_qualifier: Optional[Union[str, list[str]]] = empty_list()
     clinical_approval_status: Optional[Union[str, "ClinicalApprovalStatusEnum"]] = None
     max_research_phase: Optional[Union[str, "ResearchPhaseEnum"]] = None
-    FDA_regulatory_approvals: Optional[Union[str, list[str]]] = empty_list()
+    regulatory_approvals: Optional[Union[str, list[str]]] = empty_list()
     number_of_cases: Optional[int] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -15083,9 +15083,9 @@ class EntityToDiseaseAssociation(Association):
         if self.max_research_phase is not None and not isinstance(self.max_research_phase, ResearchPhaseEnum):
             self.max_research_phase = ResearchPhaseEnum(self.max_research_phase)
 
-        if not isinstance(self.FDA_regulatory_approvals, list):
-            self.FDA_regulatory_approvals = [self.FDA_regulatory_approvals] if self.FDA_regulatory_approvals is not None else []
-        self.FDA_regulatory_approvals = [v if isinstance(v, str) else str(v) for v in self.FDA_regulatory_approvals]
+        if not isinstance(self.regulatory_approvals, list):
+            self.regulatory_approvals = [self.regulatory_approvals] if self.regulatory_approvals is not None else []
+        self.regulatory_approvals = [v if isinstance(v, str) else str(v) for v in self.regulatory_approvals]
 
         if self.number_of_cases is not None and not isinstance(self.number_of_cases, int):
             self.number_of_cases = int(self.number_of_cases)
@@ -15100,7 +15100,7 @@ class EntityToDiseaseAssociation(Association):
 class EntityToPhenotypicFeatureAssociation(Association):
     """
     An association between any entity and a phenotypic feature, capturing clinical context such as approval status,
-    research phase, FDA regulatory approvals, and number of cases.
+    research phase, regulatory approvals, and number of cases.
     """
     _inherited_slots: ClassVar[list[str]] = []
 
@@ -15128,7 +15128,7 @@ class EntityToPhenotypicFeatureAssociation(Association):
     sex_qualifier: Optional[Union[str, BiologicalSexId]] = None
     clinical_approval_status: Optional[Union[str, "ClinicalApprovalStatusEnum"]] = None
     max_research_phase: Optional[Union[str, "ResearchPhaseEnum"]] = None
-    FDA_regulatory_approvals: Optional[Union[str, list[str]]] = empty_list()
+    regulatory_approvals: Optional[Union[str, list[str]]] = empty_list()
     number_of_cases: Optional[int] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -15192,9 +15192,9 @@ class EntityToPhenotypicFeatureAssociation(Association):
         if self.max_research_phase is not None and not isinstance(self.max_research_phase, ResearchPhaseEnum):
             self.max_research_phase = ResearchPhaseEnum(self.max_research_phase)
 
-        if not isinstance(self.FDA_regulatory_approvals, list):
-            self.FDA_regulatory_approvals = [self.FDA_regulatory_approvals] if self.FDA_regulatory_approvals is not None else []
-        self.FDA_regulatory_approvals = [v if isinstance(v, str) else str(v) for v in self.FDA_regulatory_approvals]
+        if not isinstance(self.regulatory_approvals, list):
+            self.regulatory_approvals = [self.regulatory_approvals] if self.regulatory_approvals is not None else []
+        self.regulatory_approvals = [v if isinstance(v, str) else str(v) for v in self.regulatory_approvals]
 
         if self.number_of_cases is not None and not isinstance(self.number_of_cases, int):
             self.number_of_cases = int(self.number_of_cases)
@@ -17576,8 +17576,8 @@ slots.FDA_adverse_event_level = Slot(uri=BIOLINK.FDA_adverse_event_level, name="
 slots.highest_FDA_approval_status = Slot(uri=BIOLINK.highest_FDA_approval_status, name="highest FDA approval status", curie=BIOLINK.curie('highest_FDA_approval_status'),
                    model_uri=BIOLINK.highest_FDA_approval_status, domain=None, range=Optional[Union[str, "ApprovalStatusEnum"]])
 
-slots.FDA_regulatory_approvals = Slot(uri=BIOLINK.FDA_regulatory_approvals, name="FDA regulatory approvals", curie=BIOLINK.curie('FDA_regulatory_approvals'),
-                   model_uri=BIOLINK.FDA_regulatory_approvals, domain=None, range=Optional[Union[str, list[str]]])
+slots.regulatory_approvals = Slot(uri=BIOLINK.regulatory_approvals, name="regulatory approvals", curie=BIOLINK.curie('regulatory_approvals'),
+                   model_uri=BIOLINK.regulatory_approvals, domain=None, range=Optional[Union[str, list[str]]])
 
 slots.drug_regulatory_status_world_wide = Slot(uri=BIOLINK.drug_regulatory_status_world_wide, name="drug regulatory status world wide", curie=BIOLINK.curie('drug_regulatory_status_world_wide'),
                    model_uri=BIOLINK.drug_regulatory_status_world_wide, domain=None, range=Optional[Union[str, "ApprovalStatusEnum"]])

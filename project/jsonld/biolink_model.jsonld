@@ -5364,11 +5364,11 @@
       "@type": "SlotDefinition"
     },
     {
-      "name": "FDA_regulatory_approvals",
-      "definition_uri": "https://w3id.org/biolink/vocab/FDA_regulatory_approvals",
-      "description": "Numbers that identify specific drug applications. Each drug can have multiple approval numbers (for example, as seen with ranitidine having both ANADA200536 and ANDA200536).",
+      "name": "regulatory_approvals",
+      "definition_uri": "https://w3id.org/biolink/vocab/regulatory_approvals",
+      "description": "Numbers or identifiers issued by regulatory agencies that identify specific drug applications or marketing authorizations. Values are application-number provenance and are not guaranteed to be verified identifiers from any particular agency; they may include FDA application numbers (for example, as seen with ranitidine having both ANADA200536 and ANDA200536) as well as identifiers from other regulatory agencies such as EMA marketing authorizations. Each drug can have multiple approval numbers.",
       "from_schema": "https://w3id.org/biolink/vocab/",
-      "slot_uri": "https://w3id.org/biolink/vocab/FDA_regulatory_approvals",
+      "slot_uri": "https://w3id.org/biolink/vocab/regulatory_approvals",
       "owner": "ClinicalTrialAndRegulatoryApprovalContextMixin",
       "domain_of": [
         "ClinicalTrialAndRegulatoryApprovalContextMixin"
@@ -39414,7 +39414,7 @@
         "anatomical_context_qualifier",
         "clinical_approval_status",
         "max_research_phase",
-        "FDA_regulatory_approvals",
+        "regulatory_approvals",
         "number_of_cases"
       ],
       "slot_usage": {},
@@ -41350,7 +41350,7 @@
       "slots": [
         "clinical_approval_status",
         "max_research_phase",
-        "FDA_regulatory_approvals",
+        "regulatory_approvals",
         "number_of_cases"
       ],
       "slot_usage": {},
@@ -45397,7 +45397,7 @@
     {
       "name": "EntityToDiseaseAssociation",
       "definition_uri": "https://w3id.org/biolink/vocab/EntityToDiseaseAssociation",
-      "description": "An association between any entity and a disease, capturing clinical context such as approval status, research phase, FDA regulatory approvals, and number of cases.",
+      "description": "An association between any entity and a disease, capturing clinical context such as approval status, research phase, regulatory approvals, and number of cases.",
       "examples": [
         {
           "object": {
@@ -45534,7 +45534,7 @@
         "anatomical_context_qualifier",
         "clinical_approval_status",
         "max_research_phase",
-        "FDA_regulatory_approvals",
+        "regulatory_approvals",
         "number_of_cases"
       ],
       "slot_usage": {},
@@ -45548,7 +45548,7 @@
     {
       "name": "EntityToPhenotypicFeatureAssociation",
       "definition_uri": "https://w3id.org/biolink/vocab/EntityToPhenotypicFeatureAssociation",
-      "description": "An association between any entity and a phenotypic feature, capturing clinical context such as approval status, research phase, FDA regulatory approvals, and number of cases.",
+      "description": "An association between any entity and a phenotypic feature, capturing clinical context such as approval status, research phase, regulatory approvals, and number of cases.",
       "examples": [
         {
           "object": {
@@ -45672,7 +45672,7 @@
         "has_percentage",
         "clinical_approval_status",
         "max_research_phase",
-        "FDA_regulatory_approvals",
+        "regulatory_approvals",
         "number_of_cases"
       ],
       "slot_usage": {},
@@ -47022,9 +47022,9 @@
   ],
   "metamodel_version": "1.11.0",
   "source_file": "biolink_model.yaml",
-  "source_file_date": "2026-09-08T15:14:23",
-  "source_file_size": 544224,
-  "generation_date": "2026-09-08T15:14:32",
+  "source_file_date": "2026-09-09T22:43:44",
+  "source_file_size": 544557,
+  "generation_date": "2026-09-09T22:43:48",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/biolink_model.context.jsonld",

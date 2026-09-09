@@ -22828,16 +22828,6 @@
             ],
             "description": "This association defines a relationship between a chemical or treatment (or procedure) and a disease or phenotypic feature where the chemical or treatment is used to treat, or is being studied to treat, the disease or phenotypic feature.",
             "properties": {
-                "FDA_regulatory_approvals": {
-                    "description": "Numbers that identify specific drug applications. Each drug can have multiple approval numbers (for example, as seen with ranitidine having both ANADA200536 and ANDA200536).",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
                 "adjusted_p_value": {
                     "description": "The adjusted p-value is the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct, adjusted for multiple comparisons. P is always italicized and capitalized. The actual P value* should be expressed (P=. 04) rather than expressing a statement of inequality (P<. 05), unless P<.",
                     "type": [
@@ -23201,6 +23191,16 @@
                 },
                 "qualifiers": {
                     "description": "connects an association to qualifiers that modify or qualify the meaning of that association",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "regulatory_approvals": {
+                    "description": "Numbers or identifiers issued by regulatory agencies that identify specific drug applications or marketing authorizations. Values are application-number provenance and are not guaranteed to be verified identifiers from any particular agency; they may include FDA application numbers (for example, as seen with ranitidine having both ANADA200536 and ANDA200536) as well as identifiers from other regulatory agencies such as EMA marketing authorizations. Each drug can have multiple approval numbers.",
                     "items": {
                         "type": "string"
                     },
@@ -25591,16 +25591,6 @@
             "additionalProperties": false,
             "description": "A mixin providing the clinical trial and regulatory approval context of an association between an entity (typically a chemical, drug, or treatment) and the disease or phenotypic feature it is used, or is being studied, to treat. These slots are association-scoped: they describe the entity's status with respect to this particular indication. For the entity's overall regulatory status independent of any one indication, see the node properties 'highest FDA approval status' and 'drug regulatory status world wide'.",
             "properties": {
-                "FDA_regulatory_approvals": {
-                    "description": "Numbers that identify specific drug applications. Each drug can have multiple approval numbers (for example, as seen with ranitidine having both ANADA200536 and ANDA200536).",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
                 "clinical_approval_status": {
                     "$ref": "#/$defs/ClinicalApprovalStatusEnum",
                     "description": "The clinical approval status of a chemical entity for treating a specific disease or condition, as captured in the context of the association between the chemical and the disease."
@@ -25613,6 +25603,16 @@
                     "description": "The number of cases in a study or clinical trial, primarily used in conversion of drug approval data.",
                     "type": [
                         "integer",
+                        "null"
+                    ]
+                },
+                "regulatory_approvals": {
+                    "description": "Numbers or identifiers issued by regulatory agencies that identify specific drug applications or marketing authorizations. Values are application-number provenance and are not guaranteed to be verified identifiers from any particular agency; they may include FDA application numbers (for example, as seen with ranitidine having both ANADA200536 and ANDA200536) as well as identifiers from other regulatory agencies such as EMA marketing authorizations. Each drug can have multiple approval numbers.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 }
@@ -36328,18 +36328,8 @@
                     }
                 }
             ],
-            "description": "An association between any entity and a disease, capturing clinical context such as approval status, research phase, FDA regulatory approvals, and number of cases.",
+            "description": "An association between any entity and a disease, capturing clinical context such as approval status, research phase, regulatory approvals, and number of cases.",
             "properties": {
-                "FDA_regulatory_approvals": {
-                    "description": "Numbers that identify specific drug applications. Each drug can have multiple approval numbers (for example, as seen with ranitidine having both ANADA200536 and ANDA200536).",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
                 "adjusted_p_value": {
                     "description": "The adjusted p-value is the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct, adjusted for multiple comparisons. P is always italicized and capitalized. The actual P value* should be expressed (P=. 04) rather than expressing a statement of inequality (P<. 05), unless P<.",
                     "type": [
@@ -36692,6 +36682,16 @@
                 },
                 "qualifiers": {
                     "description": "connects an association to qualifiers that modify or qualify the meaning of that association",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "regulatory_approvals": {
+                    "description": "Numbers or identifiers issued by regulatory agencies that identify specific drug applications or marketing authorizations. Values are application-number provenance and are not guaranteed to be verified identifiers from any particular agency; they may include FDA application numbers (for example, as seen with ranitidine having both ANADA200536 and ANDA200536) as well as identifiers from other regulatory agencies such as EMA marketing authorizations. Each drug can have multiple approval numbers.",
                     "items": {
                         "type": "string"
                     },
@@ -37267,18 +37267,8 @@
                     }
                 }
             ],
-            "description": "An association between any entity and a phenotypic feature, capturing clinical context such as approval status, research phase, FDA regulatory approvals, and number of cases.",
+            "description": "An association between any entity and a phenotypic feature, capturing clinical context such as approval status, research phase, regulatory approvals, and number of cases.",
             "properties": {
-                "FDA_regulatory_approvals": {
-                    "description": "Numbers that identify specific drug applications. Each drug can have multiple approval numbers (for example, as seen with ranitidine having both ANADA200536 and ANDA200536).",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
                 "adjusted_p_value": {
                     "description": "The adjusted p-value is the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct, adjusted for multiple comparisons. P is always italicized and capitalized. The actual P value* should be expressed (P=. 04) rather than expressing a statement of inequality (P<. 05), unless P<.",
                     "type": [
@@ -37658,6 +37648,16 @@
                 },
                 "qualifiers": {
                     "description": "connects an association to qualifiers that modify or qualify the meaning of that association",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "regulatory_approvals": {
+                    "description": "Numbers or identifiers issued by regulatory agencies that identify specific drug applications or marketing authorizations. Values are application-number provenance and are not guaranteed to be verified identifiers from any particular agency; they may include FDA application numbers (for example, as seen with ranitidine having both ANADA200536 and ANDA200536) as well as identifiers from other regulatory agencies such as EMA marketing authorizations. Each drug can have multiple approval numbers.",
                     "items": {
                         "type": "string"
                     },

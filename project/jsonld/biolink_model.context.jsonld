@@ -1316,9 +1316,6 @@
          },
          "@id": "FDA_adverse_event_level"
       },
-      "FDA_regulatory_approvals": {
-         "@id": "FDA_regulatory_approvals"
-      },
       "fisher_exact_odds_ratio": {
          "@type": "xsd:float",
          "@id": "fisher_exact_odds_ratio"
@@ -2389,6 +2386,9 @@
       "regulates": {
          "@type": "@id",
          "@id": "regulates"
+      },
+      "regulatory_approvals": {
+         "@id": "regulatory_approvals"
       },
       "related_condition": {
          "@type": "@id",

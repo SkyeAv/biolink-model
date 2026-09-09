@@ -2700,7 +2700,7 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/biolink/vocab/ResearchPhaseEnum#clinical_trial_phase_3>
              <https://w3id.org/biolink/vocab/ResearchPhaseEnum#clinical_trial_phase_4>
              <https://w3id.org/biolink/vocab/ResearchPhaseEnum#not_provided> ] ? ;
-          <FDA_regulatory_approvals> @<String> * ;
+          <regulatory_approvals> @<String> * ;
           <number_of_cases> @<Integer> ?
        ) ;
        rdf:type [ <ChemicalOrDrugOrTreatmentToDiseaseOrPhenotypicFeatureAssociation> ]
@@ -2859,7 +2859,7 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/biolink/vocab/ResearchPhaseEnum#clinical_trial_phase_3>
              <https://w3id.org/biolink/vocab/ResearchPhaseEnum#clinical_trial_phase_4>
              <https://w3id.org/biolink/vocab/ResearchPhaseEnum#not_provided> ] ? ;
-          <FDA_regulatory_approvals> @<String> * ;
+          <regulatory_approvals> @<String> * ;
           <number_of_cases> @<Integer> ?
        ) ;
        rdf:type [ <ClinicalTrialAndRegulatoryApprovalContextMixin> ] ?
@@ -3812,7 +3812,7 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/biolink/vocab/ResearchPhaseEnum#clinical_trial_phase_3>
              <https://w3id.org/biolink/vocab/ResearchPhaseEnum#clinical_trial_phase_4>
              <https://w3id.org/biolink/vocab/ResearchPhaseEnum#not_provided> ] ? ;
-          <FDA_regulatory_approvals> @<String> * ;
+          <regulatory_approvals> @<String> * ;
           <number_of_cases> @<Integer> ?
        ) ;
        rdf:type [ <EntityToDiseaseAssociation> ]
@@ -4417,7 +4417,7 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/biolink/vocab/ResearchPhaseEnum#clinical_trial_phase_3>
              <https://w3id.org/biolink/vocab/ResearchPhaseEnum#clinical_trial_phase_4>
              <https://w3id.org/biolink/vocab/ResearchPhaseEnum#not_provided> ] ? ;
-          <FDA_regulatory_approvals> @<String> * ;
+          <regulatory_approvals> @<String> * ;
           <number_of_cases> @<Integer> ?
        ) ;
        rdf:type [ <EntityToPhenotypicFeatureAssociation> ]
